@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/1001/99/747/besiktas-j-k-eagle-karakartal-wallpaper-preview.jpg);
+    background-size: contain;
+    background-attachment: fixed;            
+    margin: 5%;
+    border: 5px black; 
+    border-style: solid; }
+    .head {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;}
+
+        .securityID label {
+            display: inline-block;
+            width: 200px;
+        }
+        .other_informations input {
+            display: inline-block;
+            width: 200px;
+        }
+        #experiences {
+           ;
+            
+        }
+        .copyagreement textarea {
+          background-color: rgb(175, 175, 167);  
+          float: left;
+        }
+        body {
+            text-align: justify;
+        }
+        .maillist {
+            text-align: justify;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="result.html" method="get">
+        <div class="head"><h1>BJK Membership Registration Form</h1></div>
+        <div class="submit">
+        <fieldset>
+                <legend><b>Confirmation</b></legend>
+                <input type="radio" name="form" id="approved" value="approved">
+                <label for="approved">I approved the agreement and the informations mentioned below</label>
+                <br><br>
+                <input type="submit" name="submit" id="submit" value="submit">
+                <input type="reset" name="reset" id="reset" value="reset">            
+        </fieldset>
+
+        <div class="securityID">
+            <fieldset >
+                    <legend><b>Personal informations</b></legend>
+                    <label for="securityID">securityID</label>
+                    <input type="number" name="securityID" id="securityID" value="securityID">
+                    <br>
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" id="Name" value="name" required>
+                    <br>
+                    <label for="Lastname">Lastname</label>
+                    <input type="text" name="Lastname" id="Lastname" value="lastname" required>
+                    <br>
+                    <label for="Age">Age</label>
+                    <input type="number" name="Age" id="Age" value="age" required>
+                    <br>
+                    <label for="mail">E-mail Address </label>
+                    <input type="email" name="mail" id="mail" value="mail" required>
+                    <br>
+                    <label for="Photo">Photo</label>
+                    <input type="file" name="Photo" id="Photo" value="file" required>
+                    <br>
+                                    
+                              
+            </fieldset>
+
+            <div class="other_informations">
+                <fieldset>
+                    <legend><b>Other informations</b></legend>
+                    <h3>This section includes business experiences</h3>
+                    <label for="initial_date">Initial Date in business</label>
+                    <input type="date" name="initial date" id="initial_date" value="date">  
+                    <br><br>
+                    <input type="radio" name="Years" id="experiences" value="experiences"> 
+                    <label for="experiences">1-5 Years</label>                  
+                  <br>
+                  <input type="radio" name="Years" id="experiences" value="experiences">        
+                  <label for="experiences">6-10 Years</label>
+                  <br> 
+                  <label for="experiences">Experiences</label>
+                  <br>
+                  <input type="radio" name="Years" id="experiences" value="experiences">       
+                  <label for="experiences">11-15 Years</label>
+                  <br>
+                  <input type="radio" name=Years id="experiences" value="experiences">        
+                  <label for="experiences">Over than 15 Years</label>
+                  <br><br>
+                  <label for="programming_language">Programming Language</label>
+                  <select name="programming_language" id="programming_language" size="7" multiple>
+                    <option value="Python">Python</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="React">React</option>
+                    <option value="CSS">CSS</option>
+                    <option value="HTML">HTML</option>
+                  </select>
+            </fieldset>
+
+            </div>
+
+          <div class="copyagreement">
+            <fieldset>
+                <legend><b>Copy of Agreement</b></legend>
+                <label for="copy_agreement"></label>
+                <textarea style="resize: none" name="copy_agreement" id="copy_agreement" cols="45" rows="15">Copy of agreement is as follows;
+                        
+                    Yağmurlu bir günde görmüştüm seni,
+                    Üstünde çubuklu formalar vardı.
+                    Bir anda tutuldum, aşık oldum ben.
+                    Hayatın anlamı siyah beyazmış.
+                    Ölümle yaşamı ayıran çizgi,
+                    Siyahla beyazı ayıramaz ki.
+                    Her yolun sonunda ölüm olsa da.
+                    Sevenleri kimse ayıramaz ki..</textarea>
+                    
+
+            </fieldset>
+
+          </div>
+          <div class="maillist">
+            <fieldset>
+                <legend><b>Mail List</b></legend>
+                <label for="mailaccept"><b>I would like to join </b>mail list</label>
+                <input type="radio" name="maillist" id="mailaccept" value="mailaccept" checked>
+                <br>
+                <label for="mailreject"><b>I wouldn't like to join </b>mail list</label>
+                <input type="radio" name="maillist" id="mailreject" value="mailreject">                        
+        </fieldset>
+
+          </div>
+           
+                
+    </div>
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
